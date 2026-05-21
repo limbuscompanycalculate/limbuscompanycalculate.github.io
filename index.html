@@ -11,6 +11,17 @@
 
     src: url('Fonts/Tagmarker Regular.ttf');
 }
+table {
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid white;
+    padding: 10px; 
+}
+input {
+    width: 100%;
+    box-sizing: border-box;
+}
 
 body {
 
@@ -23,9 +34,27 @@ body {
     text-align: center;
     font-size: 40px;
     line-height: 0.1;
-    
 }
 
+<table id = 'status'>
+      <tr>
+          <th>1</th>
+          <th>2</th>
+      </tr>
+</table>
+
+<br>
+
+<button onclick="addrow()">
+    행 추가
+</button>
+
+<button onclick="showData()">
+    데이터 출력
+</button>
+    
+
+      
 </style>
 
 </head>
